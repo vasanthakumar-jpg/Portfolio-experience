@@ -3,7 +3,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { chromium } from "playwright";
 
-const siteUrl = new URL(process.env.AUDIT_URL || "http://127.0.0.1:4173/portfolio-site/");
+const siteUrl = new URL(process.env.AUDIT_URL || "http://127.0.0.1:4173/Portfolio-experience/");
 const artifactDirectory = resolve("audit-artifacts");
 const checks = [];
 const browserErrors = [];
@@ -326,10 +326,10 @@ try {
     }));
     assert.match(metadata.title, /Vasantha/i);
     assert.ok(metadata.description?.length > 40);
-    assert.equal(metadata.canonical, "https://vasanthakumar-jpg.github.io/portfolio-site/");
+    assert.equal(metadata.canonical, "https://vasanthakumar-jpg.github.io/Portfolio-experience/");
     const image = new URL(metadata.image);
     assert.equal(image.origin, "https://vasanthakumar-jpg.github.io");
-    assert.equal(image.pathname, "/portfolio-site/images/vasanthakumar-profile.jpg");
+    assert.equal(image.pathname, "/Portfolio-experience/images/vasanthakumar-profile.jpg");
     // Map the canonical production asset to the audited base (development uses /).
     const imageAssetPath = image.pathname.slice(new URL(metadata.canonical).pathname.length);
     const imageResponse = await page.request.get(new URL(imageAssetPath, siteUrl).href);
@@ -355,7 +355,7 @@ try {
     assert.equal(await page.locator('a[href$=".docx"]').count(), 0);
     const sitemap = await page.request.get(new URL("sitemap.xml", siteUrl).href);
     assert.ok(sitemap.ok());
-    assert.ok((await sitemap.text()).includes("https://vasanthakumar-jpg.github.io/portfolio-site/"));
+    assert.ok((await sitemap.text()).includes("https://vasanthakumar-jpg.github.io/Portfolio-experience/"));
     const schema = JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());
     assert.equal(schema["@type"], "ProfilePage");
     assert.equal(schema.mainEntity.name, "Vasanthakumar Rajendran");

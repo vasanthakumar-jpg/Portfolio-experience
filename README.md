@@ -1,6 +1,6 @@
 # Vasanthakumar Rajendran — Developer portfolio
 
-A React, Vite, TypeScript, and Tailwind/shadcn portfolio for front-end and Shopify/e-commerce development. Published URL: https://vasanthakumar-jpg.github.io/portfolio-site/
+A React, Vite, TypeScript, and Tailwind/shadcn portfolio for front-end and Shopify/e-commerce development. Published URL: https://vasanthakumar-jpg.github.io/Portfolio-experience/
 
 ## Content
 
@@ -29,7 +29,7 @@ npm run build
 npm run preview
 ```
 
-Production preview: http://localhost:4173/portfolio-site/. The build uses `/portfolio-site/` for the Vite base and React Router basename; development uses `/`. Keep public asset and resume URLs relative to `import.meta.env.BASE_URL`. The single-page site's section hashes work with static hosting; arbitrary nested routes do not gain an SPA fallback on GitHub Pages.
+Production preview: http://localhost:4173/Portfolio-experience/. The build uses `/Portfolio-experience/` for the Vite base and React Router basename; development uses `/`. Keep public asset and resume URLs relative to `import.meta.env.BASE_URL`. The single-page site's section hashes work with static hosting; arbitrary nested routes do not gain an SPA fallback on GitHub Pages.
 
 ## Resume
 

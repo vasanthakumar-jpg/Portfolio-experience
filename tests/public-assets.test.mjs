@@ -19,7 +19,7 @@ test("published assets contain the PDF resume and no working documents or audit 
 
 test("search discovery points to the actual GitHub Pages project URL", async () => {
   const sitemap = await readFile("public/sitemap.xml", "utf8");
-  assert.ok(sitemap.includes("<loc>https://vasanthakumar-jpg.github.io/portfolio-site/</loc>"));
+  assert.ok(sitemap.includes("<loc>https://vasanthakumar-jpg.github.io/Portfolio-experience/</loc>"));
   const robots = await readFile("public/robots.txt", "utf8");
-  assert.ok(robots.includes("Sitemap: https://vasanthakumar-jpg.github.io/portfolio-site/sitemap.xml"));
+  assert.ok(robots.includes("Sitemap: https://vasanthakumar-jpg.github.io/Portfolio-experience/sitemap.xml"));
 });

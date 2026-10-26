@@ -7,7 +7,7 @@ export const profile = {
   location: "Tirupur, Tamil Nadu",
   github: "https://github.com/vasanthakumar-jpg",
   linkedin: "https://www.linkedin.com/in/vasanthakumar-rajendran-83993422b/",
-  siteUrl: "https://vasanthakumar-jpg.github.io/portfolio-site/",
+  siteUrl: "https://vasanthakumar-jpg.github.io/Portfolio-experience/",
   whatsapp: "https://wa.me/917339232817",
   resumePath: "Vasanthakumar_Resume.pdf",
   summary: "I build responsive React interfaces and customize Shopify storefronts with Liquid, HTML, CSS, and JavaScript. My work spans reusable UI, REST API integration, testing, technical SEO, and everyday e-commerce workflows.",

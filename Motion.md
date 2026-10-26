@@ -51,7 +51,7 @@ Reduced motion disables Lenis, pins, scrubbing, parallax, cursor effects and con
 
 ## Verification
 
-Run the production preview under `/portfolio-site/`, then run browser suites separately:
+Run the production preview under `/Portfolio-experience/`, then run browser suites separately:
 
 ```sh
 npm run build

@@ -9,7 +9,7 @@ export default defineConfig(({ command, isPreview }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: command === "build" || isPreview ? "/portfolio-site/" : "/", // GitHub Pages base path
+  base: command === "build" || isPreview ? "/Portfolio-experience/" : "/", // GitHub Pages base path
   build: {
     rollupOptions: {
       output: {

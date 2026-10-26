@@ -56,7 +56,7 @@ npm run build
 npm run preview
 ```
 
-At `http://localhost:4173/portfolio-site/`, check the following at mobile, tablet, and desktop widths:
+At `http://localhost:4173/Portfolio-experience/`, check the following at mobile, tablet, and desktop widths:
 
 - Submit all-empty and whitespace-only values: field errors appear; no draft opens.
 - Enter an invalid email, a blank subject, or a short message: the correct error appears and focus moves to the first invalid field.

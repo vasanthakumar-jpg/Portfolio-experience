@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://vasanthakumar-jpg.github.io/portfolio-site/sitemap.xml
+Sitemap: https://vasanthakumar-jpg.github.io/Portfolio-experience/sitemap.xml

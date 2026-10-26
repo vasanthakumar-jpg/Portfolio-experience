@@ -3,7 +3,7 @@ import { mkdir, readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import { chromium } from "playwright";
 
-const base = "http://127.0.0.1:4173/portfolio-site/";
+const base = "http://127.0.0.1:4173/Portfolio-experience/";
 const browser = await chromium.launch();
 const errors = [];
 const checks = [];
